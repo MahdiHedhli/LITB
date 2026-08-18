@@ -713,6 +713,153 @@
     },
     {
       "config_cell": {
+        "digest": "93412c49263142f02f664f62b2fcba3cecbd7a4d2bc2b2df384ffff70185360f",
+        "key_version": "1.0",
+        "selection_version": "1.0"
+      },
+      "corroboration": {
+        "accepted_record_count": 1,
+        "by_validity": {
+          "clean": {
+            "count": 1,
+            "earliest_period": "2026-08",
+            "latest_period": "2026-08"
+          },
+          "degraded_midrun": {
+            "count": 0,
+            "earliest_period": null,
+            "latest_period": null
+          },
+          "legacy_unreported": {
+            "count": 0,
+            "earliest_period": null,
+            "latest_period": null
+          },
+          "nonquiescent": {
+            "count": 0,
+            "earliest_period": null,
+            "latest_period": null
+          }
+        }
+      },
+      "facet_id": "all-cases-text",
+      "hardware": {
+        "accelerators": [
+          {
+            "count": 1,
+            "kind": "integrated_gpu",
+            "memory_gb": null,
+            "model": "Apple M1 Ultra 64-core GPU"
+          }
+        ],
+        "cpu": {
+          "logical_cores": 20,
+          "model": "Apple M1 Ultra"
+        },
+        "execution_mode": "unknown",
+        "memory": {
+          "architecture": "shared",
+          "system_gb": 128.0
+        }
+      },
+      "measurement_conditions": {
+        "hard_threshold_crossed": false,
+        "post": {
+          "categories": [],
+          "outcome": "within_thresholds"
+        },
+        "pre": {
+          "categories": [],
+          "outcome": "within_thresholds"
+        }
+      },
+      "measurement_period": "2026-08",
+      "metrics": {
+        "case_count": 5,
+        "completion_tokens_per_second": 10.9,
+        "exact_format_pass_count": 5,
+        "exact_format_score_percent": 100.0,
+        "latency_ms_mean": 3049.9,
+        "scored_case_count": 5,
+        "semantic_pass_count": 5,
+        "semantic_score_percent": 100.0,
+        "usage_coverage_cases": 5
+      },
+      "model": {
+        "declared_context_tokens": 262144,
+        "digest": "sha256-manifest-v1:56590eedff3ffa802334ebbecdcce9522032e26383ab5df462f81bcafdb83f84",
+        "display_name": "Qwen 3.6 27B",
+        "parameter_scale": {
+          "active_billions": null,
+          "total_billions": null
+        },
+        "precision": "MLX 4-bit",
+        "source": "lmstudio-community/Qwen3.6-27B-MLX-4bit"
+      },
+      "performance_distribution": {
+        "completion_tokens_per_second": {
+          "maximum": 10.9,
+          "median": 10.9,
+          "minimum": 10.9,
+          "sample_count": 1
+        },
+        "latency_ms_mean": {
+          "maximum": 3049.9,
+          "median": 3049.9,
+          "minimum": 3049.9,
+          "sample_count": 1
+        }
+      },
+      "plausibility": {
+        "basis": {
+          "hardware_class": "unknown",
+          "model_size_basis": "unknown",
+          "model_size_bucket": "unknown"
+        },
+        "evaluated_record_count": 0,
+        "outside_envelope_record_count": 0,
+        "policy_version": "1.0",
+        "signals": [],
+        "status": "not_evaluated"
+      },
+      "profile": "standard",
+      "rank": 1,
+      "runtime": {
+        "backend": "MLX LLM 1.11.0 / Apple Metal",
+        "name": "LM Studio",
+        "version": "0.4.21+2"
+      },
+      "runtime_configuration": {
+        "concurrent_requests": 1,
+        "context_window_tokens": 262144,
+        "offload_mode": "not_applicable",
+        "speculative_decoding": "disabled"
+      },
+      "score_intervals": {
+        "exact_format": {
+          "lower_percent": 56,
+          "upper_percent": 100
+        },
+        "method": "wilson_95",
+        "semantic": {
+          "lower_percent": 56,
+          "upper_percent": 100
+        }
+      },
+      "settings": {
+        "max_output_tokens": 4096,
+        "reasoning_effort": "none",
+        "seed": 0,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "submission_id": "60891144ade023483edcccecefc5838a62ca30ab88b8fa6888b1d354566a55b7",
+      "submission_schema_version": "1.1",
+      "suite_version": "1.0",
+      "validity": "clean"
+    },
+    {
+      "config_cell": {
         "digest": "c3bf39f87f04464014b631b3975b584367cba7b2520cd401b03f03caca163320",
         "key_version": "1.0",
         "selection_version": "1.0"
@@ -1121,6 +1268,6 @@
       "validity": "legacy_unreported"
     }
   ],
-  "entry_count": 8,
+  "entry_count": 9,
   "schema_version": "1.1"
 }
